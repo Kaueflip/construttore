@@ -119,8 +119,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
-  border-radius: 20px;
+  padding: 1rem 1.5rem;
+  border-radius: 100px;
   margin-top: 2rem;
   transition: all ease 300ms;
   box-shadow: 0 0 20px rgba(65, 65, 65, 0.252);
@@ -142,4 +142,20 @@
   color: var(--bg);
   font-size: 18px;
   margin-bottom: 0;
+}
+
+@media (max-width: 575px) {
+  .block-color {
+    height: 250px;
+  }
+  .enterprise-detail {
+    padding-top: 25px;
+    padding-bottom: 100px;
+  }
+  .enterprise-detail figure img {
+    border-radius: 8px;
+  }
+  .enterprise-detail h3 {
+    margin-top: 2rem;
+  }
 }

@@ -56,3 +56,18 @@
   color: var(--verde-01-ct);
   margin-bottom: 0;
 }
+
+@media (max-width: 575px) {
+  .block-color {
+    height: 200px;
+  }
+  .block-color h1 {
+    font-size: 16px;
+    padding-bottom: 0.6rem;
+    text-align: center;
+  }
+  #enterprises {
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+}

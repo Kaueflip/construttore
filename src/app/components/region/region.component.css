@@ -3,7 +3,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(100vh);
+  height: 100vh;
   margin-bottom: 200px;
 }
 
@@ -37,4 +37,32 @@
   color: var(--bg);
   position: relative;
   top: 12rem;
+}
+
+@media (max-width: 575px) {
+  .region {
+    height: fit-content;
+    margin-bottom: 0px;
+  }
+  .region .region-row-second {
+    background-color: #00000064;
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 34px;
+    top: 0rem;
+    border-radius: 0px;
+    height: 100%;
+    position: static;
+  }
+  .region .region-content h4 {
+    letter-spacing: 10px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 0rem;
+    padding-top: 30px;
+  }
+
+  .region .first-col {
+    background-color: #00000064;
+  }
 }
