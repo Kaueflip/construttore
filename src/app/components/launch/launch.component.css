@@ -19,3 +19,27 @@
   padding-bottom: 40px;
   color: var(--cinza-ct);
 }
+
+@media (max-width: 575px) {
+  #launch {
+    padding-top: 0px;
+    padding-bottom: 34px;
+  }
+  #launch .launch-col-left p {
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  #launch .launch-col-right h3 {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 40px;
+    padding-bottom: 32px;
+    text-align: center;
+    width: 100%;
+  }
+  .row-lauch {
+    flex-direction: column-reverse;
+  }
+}

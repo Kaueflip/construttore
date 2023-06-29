@@ -2,3 +2,9 @@
   height: 100%;
   height: fit-content;
 }
+
+@media (max-width: 575px) {
+  .swiper-container {
+    margin-left: -16px !important;
+  }
+}

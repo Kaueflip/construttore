@@ -19,3 +19,18 @@
   font-size: calc(0.5rem + 1.2vw);
   line-height: calc(2rem + 1vw);
 }
+@media (max-width: 575px) {
+  #best {
+    padding-top: 50px;
+    padding-bottom: 34px;
+  }
+  #best .best-col-left h2 {
+    letter-spacing: 10px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 1rem;
+  }
+  #best .best-col-left {
+    padding-right: 12px;
+  }
+}

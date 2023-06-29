@@ -56,9 +56,11 @@ export class SwiperAboutComponent {
       },
       400: {
         slidesPerView: 2,
+        spaceBetween: 16,
       },
       300: {
         slidesPerView: 1,
+        spaceBetween: 40,
       },
     },
     /*    navigation: {

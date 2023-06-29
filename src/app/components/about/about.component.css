@@ -29,3 +29,24 @@
 #aboutMade {
   padding-top: 100px;
 }
+@media (max-width: 575px) {
+  #about {
+    padding-bottom: 50px;
+    padding-top: 0px;
+  }
+  #about .about-container-top img {
+    margin-bottom: 30px;
+  }
+  #about .about-container-top h3 {
+    margin-bottom: 30px;
+  }
+  #about .about-container-top h3 {
+    letter-spacing: 10px;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+  }
+  #aboutMade {
+    padding-top: 34px;
+  }
+}

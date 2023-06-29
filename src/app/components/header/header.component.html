@@ -1,7 +1,7 @@
 <header [class.scrolled]="scrolled" class="header fixed-top">
   <div class="container">
     <nav class="navbar">
-      <a class="navbar-brand" href="/">
+      <a class="navbar-brand" routerLink="/">
         <img
           class="logo"
           [src]="getSafelogoPath()"
@@ -23,9 +23,6 @@
 
   <div
     class="offcanvas offcanvas-end"
-    data-bs-backdrop="false"
-    data-bs-scroll="false"
-    tabindex="-1"
     id="menuLateral"
     aria-labelledby="menuLateralLabel"
   >

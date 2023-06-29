@@ -83,3 +83,17 @@ a {
 .swiper-pagination-bullet-active {
   background-color: var(--verde-01-ct) !important;
 }
+
+.offcanvas-backdrop.show {
+  opacity: 0;
+}
+
+.offcanvas-backdrop {
+  background-color: #00000000;
+}
+
+@media (max-width: 575px) {
+  .swiper-container {
+    margin-left: -16px !important;
+  }
+}

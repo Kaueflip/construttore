@@ -3,7 +3,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(100vh);
+  height: 100vh;
 }
 
 .banner .banner-content {
@@ -31,4 +31,19 @@
 }
 .banner .scroll-indicator svg {
   width: 120px;
+}
+
+@media (max-width: 575px) {
+  .banner {
+    background-image: url(../../../assets/img/home/banner_mobile.webp);
+    height: 97vh;
+  }
+  .banner .banner-content h1 {
+    letter-spacing: 10px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .banner .scroll-indicator {
+    bottom: 1.3rem;
+  }
 }

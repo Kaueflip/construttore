@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  z-index: 1000;
+  z-index: 10;
 }
 
 .btn-menu,
@@ -45,6 +45,7 @@
   filter: brightness(0.8);
   transition: all 200ms ease;
 }
+
 .menu-links {
   padding-bottom: 50px;
 }
@@ -77,7 +78,9 @@ header {
 }
 
 header.scrolled {
-  background-color: #4d6f67c9;
+  /*   background-color: #4d6f67c9;
+ */
+  background-color: var(--cinza-ct);
   padding-bottom: 0px;
   padding-top: 0px;
   -webkit-transition: ease 300ms all;
@@ -99,4 +102,58 @@ header.scrolled .navbar-brand {
 
 header.scrolled .btn-menu {
   width: 30px;
+}
+
+@media (max-width: 575px) {
+  header {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  .logo {
+    height: 45px;
+  }
+  .btn-menu,
+  .btn-menu-close {
+    width: 20px;
+  }
+
+  header.scrolled .btn-menu,
+  header.scrolled .btn-menu-close {
+    width: 20px;
+  }
+  header.scrolled {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: var(--cinza-ct);
+  }
+  header.scrolled .logo {
+    height: 45px;
+  }
+  .offcanvas.offcanvas-end {
+    width: 82%;
+    max-width: 700px;
+  }
+  .offcanvas-header {
+    padding-top: 27px;
+    padding-right: 12px;
+  }
+  .offcanvas-body {
+    padding-top: 50px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .offcanvas-body .menu-links li,
+  .offcanvas-body .menu-social-links li,
+  .menu-social-links p {
+    text-align: end;
+  }
+  .menu-social-links .lang {
+    margin-left: auto;
+  }
+  .menu-links ul li {
+    margin-bottom: 1rem;
+  }
+  .menu-links ul li a {
+    font-size: 22px;
+  }
 }
