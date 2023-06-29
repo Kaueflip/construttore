@@ -1,0 +1,112 @@
+<header [class.scrolled]="scrolled" class="header fixed-top">
+  <div class="container">
+    <nav class="navbar">
+      <a class="navbar-brand" href="/">
+        <img
+          class="logo"
+          [src]="getSafelogoPath()"
+          alt="Logo Construttore"
+          loading="lazy"
+        />
+      </a>
+      <button
+        class="btn-menu"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#menuLateral"
+        aria-controls="menuLateral"
+      >
+        <img [src]="getSafehamburguerPath()" alt="Menu" />
+      </button>
+    </nav>
+  </div>
+
+  <div
+    class="offcanvas offcanvas-end"
+    data-bs-backdrop="false"
+    data-bs-scroll="false"
+    tabindex="-1"
+    id="menuLateral"
+    aria-labelledby="menuLateralLabel"
+  >
+    <div class="offcanvas-header">
+      <button
+        type="button"
+        class="btn-menu-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      >
+        <img [src]="getSafeclosePath()" alt="Fechar Menu" />
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="row menu-links">
+        <div class="col-sm-12">
+          <ul>
+            <li><a routerLink="/">HOME</a></li>
+            <li><a href="/#about">INSTITUCIONAL</a></li>
+            <li>
+              <a routerLink="/empreendimentos">EMPREENDIMENTOS</a>
+            </li>
+            <li><a href="/#region">REGIÃO</a></li>
+            <li>
+              <a routerLink="/oportunidades">OPORTUNIDADES</a>
+            </li>
+            <li>
+              <a routerLink="/contato">CONTATO</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row menu-social-links">
+        <div class="col-sm-12 col-lg-6">
+          <ul>
+            <p class="mb-4">Siga a Construttore</p>
+            <li class="mb-3">
+              <a target="_blank" href="https://www.facebook.com/construttore/">
+                <svg
+                  class="me-1"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.5312 0H2.34375C1.72215 0 1.12601 0.24693 0.686468 0.686469C0.24693 1.12601 0 1.72215 0 2.34375L0 19.5312C0 20.1529 0.24693 20.749 0.686468 21.1885C1.12601 21.6281 1.72215 21.875 2.34375 21.875H9.04541V14.438H5.96924V10.9375H9.04541V8.26953C9.04541 5.23486 10.8521 3.55859 13.6191 3.55859C14.9443 3.55859 16.3301 3.79492 16.3301 3.79492V6.77344H14.8032C13.2988 6.77344 12.8296 7.70703 12.8296 8.66455V10.9375H16.188L15.6509 14.438H12.8296V21.875H19.5312C20.1529 21.875 20.749 21.6281 21.1885 21.1885C21.6281 20.749 21.875 20.1529 21.875 19.5312V2.34375C21.875 1.72215 21.6281 1.12601 21.1885 0.686469C20.749 0.24693 20.1529 0 19.5312 0Z"
+                    fill="white"
+                  />
+                </svg>
+                Facebook
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="https://www.instagram.com/construttore" target="_blank">
+                <svg
+                  class="me-1"
+                  width="22"
+                  height="23"
+                  viewBox="0 0 22 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.946 6.20581C7.84058 6.20581 5.33569 8.71069 5.33569 11.8162C5.33569 14.9216 7.84058 17.4265 10.946 17.4265C14.0515 17.4265 16.5564 14.9216 16.5564 11.8162C16.5564 8.71069 14.0515 6.20581 10.946 6.20581ZM10.946 15.4636C8.93921 15.4636 7.29858 13.8279 7.29858 11.8162C7.29858 9.80444 8.93433 8.1687 10.946 8.1687C12.9578 8.1687 14.5935 9.80444 14.5935 11.8162C14.5935 13.8279 12.9529 15.4636 10.946 15.4636ZM18.0945 5.97632C18.0945 6.70386 17.5085 7.28491 16.7859 7.28491C16.0584 7.28491 15.4773 6.69897 15.4773 5.97632C15.4773 5.25366 16.0632 4.66772 16.7859 4.66772C17.5085 4.66772 18.0945 5.25366 18.0945 5.97632ZM21.8103 7.30444C21.7273 5.55151 21.3269 3.99878 20.0427 2.71948C18.7634 1.44019 17.2107 1.03979 15.4578 0.951904C13.6511 0.849365 8.23608 0.849365 6.42944 0.951904C4.6814 1.03491 3.12866 1.4353 1.84448 2.7146C0.560303 3.9939 0.164795 5.54663 0.0769043 7.29956C-0.0256348 9.1062 -0.0256348 14.5212 0.0769043 16.3279C0.159912 18.0808 0.560303 19.6335 1.84448 20.9128C3.12866 22.1921 4.67651 22.5925 6.42944 22.6804C8.23608 22.783 13.6511 22.783 15.4578 22.6804C17.2107 22.5974 18.7634 22.197 20.0427 20.9128C21.322 19.6335 21.7224 18.0808 21.8103 16.3279C21.9128 14.5212 21.9128 9.11108 21.8103 7.30444ZM19.4763 18.2664C19.0955 19.2234 18.3582 19.9607 17.3962 20.3464C15.9558 20.9177 12.5378 20.7859 10.946 20.7859C9.35425 20.7859 5.9314 20.9128 4.49585 20.3464C3.53882 19.9656 2.80151 19.2283 2.41577 18.2664C1.84448 16.8259 1.97632 13.408 1.97632 11.8162C1.97632 10.2244 1.84937 6.80151 2.41577 5.36597C2.79663 4.40894 3.53394 3.67163 4.49585 3.28589C5.93628 2.7146 9.35425 2.84644 10.946 2.84644C12.5378 2.84644 15.9607 2.71948 17.3962 3.28589C18.3533 3.66675 19.0906 4.40405 19.4763 5.36597C20.0476 6.8064 19.9158 10.2244 19.9158 11.8162C19.9158 13.408 20.0476 16.8308 19.4763 18.2664Z"
+                    fill="white"
+                  />
+                </svg>
+                Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <ul>
+            <p class="mb-4">Idioma</p>
+            <li class="lang"><a href="/">PT</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

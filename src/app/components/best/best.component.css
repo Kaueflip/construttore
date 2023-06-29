@@ -1,0 +1,21 @@
+#best {
+  background-color: var(--cinza-ct);
+  color: var(--bg);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#best .best-col-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding-right: 2rem;
+}
+#best .best-col-left h2 {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  font-size: calc(0.5rem + 1.2vw);
+  line-height: calc(2rem + 1vw);
+}

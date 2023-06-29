@@ -1,0 +1,12 @@
+<swiper class="swiper" [config]="config">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" *ngFor="let slide of slideData">
+      <img
+        src="../assets/img/about/final/{{ slide.path }}.webp"
+        alt="{{ slide.alt }}"
+        loading="lazy"
+        class="{{ slide.class }}"
+      />
+    </div>
+  </div>
+</swiper>

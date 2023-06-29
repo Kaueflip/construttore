@@ -1,0 +1,63 @@
+#footer {
+}
+#footer .footer-cf-01,
+#footer .footer-cf-02 {
+  padding: 100px 0px;
+  padding-bottom: 0;
+}
+#footer .footer-cf-01 {
+  background-color: var(--cinza-ct);
+}
+#footer .footer-cf-02 {
+  background-color: var(--verde-02-ct);
+  color: var(--bg);
+}
+#footer .footer-cf-02 .container-2 {
+  border-top: 1px solid var(--bg);
+  border-bottom: 1px solid var(--bg);
+  margin-top: 90px;
+  padding: 30px 0px;
+  display: flex;
+}
+#footer .footer-cf-02 .container-3 {
+  padding: 30px 0px;
+  font-size: 12px;
+}
+#footer .footer-cf-02 .container-3 .privacy-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+#footer .footer-cf-02 .container-3 a {
+  color: var(--bg);
+}
+
+#footer .footer-row-01 {
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+#footer .footer-row-01 h6 {
+  margin-bottom: 1.5rem;
+  color: var(--verde-01-ct);
+}
+#footer .footer-row-02 h6 {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 16px;
+}
+#footer .footer-row-01 ul li a,
+#footer .footer-row-02 ul li a {
+  color: var(--bg);
+}
+#footer .footer-row-02 ul li span {
+  letter-spacing: 3px;
+  font-size: 16px;
+}
+#footer .footer-row-02 ul li a {
+  text-decoration: underline !important;
+  letter-spacing: 3px;
+  font-size: 16px;
+}
+#footer .map {
+  width: 100%;
+}

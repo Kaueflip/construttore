@@ -1,0 +1,33 @@
+<div class="block-color">
+  <div class="container">
+    <h1 class="">Empreendimentos</h1>
+  </div>
+</div>
+<section id="enterprises" class="container-fluid">
+  <div class="container p-0">
+    <div class="row g-3 g-lg-5">
+      <div
+        class="col-sm-12 col-md-6 col-lg-4"
+        *ngFor="let enterprise of enterprises"
+      >
+        <div class="card-custom">
+          <div class="card-image">
+            <a [routerLink]="['/empreendimentos', enterprise.id]">
+              <img
+                [title]="enterprise.nome"
+                [src]="enterprise.fachada"
+                [alt]="enterprise.nome + ' | Construttore'"
+              />
+            </a>
+          </div>
+          <div class="card-content">
+            <a [routerLink]="['/empreendimentos', enterprise.id]">
+              {{ enterprise.nome }}
+            </a>
+            <p>{{ enterprise.status }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

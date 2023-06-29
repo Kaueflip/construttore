@@ -1,0 +1,21 @@
+#launch {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+#launch .launch-col-left p {
+  text-align: right;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+#launch .launch-col-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+#launch .launch-col-right h3 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: var(--cinza-ct);
+}

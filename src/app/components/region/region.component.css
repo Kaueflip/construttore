@@ -1,0 +1,40 @@
+.region {
+  background-image: url(../../../assets/img/region/beach-top.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh);
+  margin-bottom: 200px;
+}
+
+.region .region-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.region .region-content h4 {
+  color: var(--bg);
+  width: 100%;
+  max-width: 1140px;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  font-size: calc(0.9rem + 1vw);
+  line-height: calc(2rem + 1vw);
+  position: relative;
+  top: 1rem;
+}
+
+.region .region-row-second {
+  background-color: var(--verde-02-ct);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem;
+  color: var(--bg);
+  position: relative;
+  top: 12rem;
+}

@@ -1,0 +1,31 @@
+#about {
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+#about .about-container-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+#about .about-container-top img {
+  margin-bottom: 60px;
+}
+#about .about-container-top h3 {
+  margin-bottom: 40px;
+}
+
+#about .about-container-top h3 {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: calc(0.5rem + 0.8vw);
+  color: var(--verde-01-ct);
+}
+#about .about-container-top p {
+  color: var(--cinza-ct);
+}
+#aboutMade {
+  padding-top: 100px;
+}

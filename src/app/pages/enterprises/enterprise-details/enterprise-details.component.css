@@ -1,0 +1,145 @@
+.block-color {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--verde-02-ct);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.block-color h1 {
+  color: var(--bg);
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 22px;
+}
+.block-color h2 {
+  color: var(--verde-01-ct);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding-bottom: 0.6rem;
+  font-size: 16px;
+}
+
+.swiper {
+  height: 700px;
+}
+.swiper .swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  position: relative;
+}
+.legenda {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4d6f6741;
+  color: #bfbfbf;
+  padding: 10px;
+  text-align: center;
+}
+.swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.enterprise-detail {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.enterprise-detail figure {
+  margin-bottom: 25px;
+}
+.enterprise-detail figure img {
+  border-radius: 20px;
+}
+.enterprise-detail .enterprise-detail__name {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-size: 22px;
+}
+.enterprise-detail .enterprise-detail__status {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--verde-01-ct);
+  font-size: 16px;
+}
+.enterprise-detail .enterprise-detail__adress {
+  font-weight: 600;
+}
+.enterprise-detail h3 {
+  margin-top: 3rem;
+  padding-bottom: 0.5rem;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.enterprise-detail ul li {
+  padding-bottom: 0.3rem;
+}
+.progress-bar-wrapper {
+  display: block;
+  width: 100%;
+  background-color: #4251561c;
+  border-radius: 80px;
+}
+
+.enterprise-detail .progress-bar {
+  background-color: var(--verde-01-ct);
+  height: 3px;
+  border-radius: 80px;
+}
+.enterprise-detail .progress-bar-general {
+  background-color: var(--verde-01-ct);
+  height: 6px;
+  margin-bottom: 2rem;
+  border-radius: 80px;
+}
+
+.enterprise-detail .estagio-items li {
+  margin-top: 0.5rem;
+}
+.enterprise-detail .map-link {
+  color: inherit;
+  text-decoration: underline !important;
+}
+
+.enterprise-detail .contact-card {
+  background-color: var(--verde-01-ct);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 20px;
+  margin-top: 2rem;
+  transition: all ease 300ms;
+  box-shadow: 0 0 20px rgba(65, 65, 65, 0.252);
+}
+.enterprise-detail .contact-card:hover {
+  filter: brightness(0.9);
+  transition: all ease 300ms;
+  box-shadow: 0 0 10px rgba(65, 65, 65, 0.252);
+}
+.enterprise-detail .contact-card:active {
+  transform: scale(0.99);
+  box-shadow: 0 0 0px rgba(65, 65, 65, 0.252);
+}
+
+.enterprise-detail .contact-card p {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--bg);
+  font-size: 18px;
+  margin-bottom: 0;
+}

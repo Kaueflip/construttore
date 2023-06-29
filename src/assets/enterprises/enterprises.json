@@ -1,0 +1,38 @@
+{
+  "enterprises": [
+    {
+      "id": "1",
+      "nome": "Brava View",
+      "descricao": "Descrição do empreendimento 1",
+      "endereco": "Endereço do empreendimento 1",
+      "imagens": [
+        "assets/img/enterprises/brava-view/launch-01.webp",
+        "assets/img/enterprises/brava-view/launch-02.webp",
+        "assets/img/enterprises/brava-view/launch-03.webp"
+      ]
+    },
+    {
+      "id": "2",
+      "nome": "Empreendimento 2",
+      "descricao": "Descrição do empreendimento 2",
+      "endereco": "Endereço do empreendimento 2",
+      "imagens": [
+        "assets/img/enterprises/brava-view/launch-01.webp",
+        "assets/img/enterprises/brava-view/launch-01.webp",
+        "assets/img/enterprises/brava-view/launch-01.webp"
+      ]
+    },
+    {
+      "id": "3",
+      "nome": "Empreendimento 3",
+      "descricao": "Descrição do empreendimento 3",
+      "endereco": "Endereço do empreendimento 3",
+      "imagens": [
+        "assets/img/enterprises/brava-view/launch-01.webp",
+        "assets/img/enterprises/brava-view/launch-01.webp",
+        "assets/img/enterprises/brava-view/launch-01.webp"
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,23 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #f1f1f1;
+  transition: width 0.3s ease;
+}
+
+.sidebar.open {
+  width: 300px;
+}
+
+.close-button {
+  margin-top: 16px;
+  padding: 8px;
+  background-color: #ccc;
+  border: none;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: #999;
+}
