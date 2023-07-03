@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { FormComponent } from 'src/app/components/form/form.component';
 
 @Component({
   selector: 'app-contact',

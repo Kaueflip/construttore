@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -20,6 +20,8 @@ import { EnterpriseDetailsComponent } from './pages/enterprises/enterprise-detai
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { FormComponent } from './components/form/form.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,8 +41,14 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     PageNotFoundComponent,
     BreadcrumbComponent,
     SidebarComponent,
+    FormComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgxUsefulSwiperModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgxUsefulSwiperModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
