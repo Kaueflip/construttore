@@ -9,7 +9,7 @@ export interface Enterprise {
   fachada: string;
   banner: string;
   status: string;
-  diferenciais: string;
+  diferenciais: string[];
   oEmpreendimento: string[];
   oApartamento: string[];
   aObra: any[];

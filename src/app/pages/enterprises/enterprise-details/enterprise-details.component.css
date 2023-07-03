@@ -1,5 +1,5 @@
 .block-color {
-  height: 100vh;
+  height: 200vh;
   width: 100%;
   background-color: var(--verde-02-ct);
   background-position: center;
@@ -51,13 +51,14 @@
 
 .enterprise-detail {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
+
 .enterprise-detail figure {
   margin-bottom: 25px;
 }
 .enterprise-detail figure img {
-  border-radius: 20px;
+  border-radius: 12px;
 }
 .enterprise-detail .enterprise-detail__name {
   display: block;
@@ -74,6 +75,7 @@
 }
 .enterprise-detail .enterprise-detail__adress {
   font-weight: 600;
+  margin-bottom: 32px;
 }
 .enterprise-detail h3 {
   margin-top: 3rem;
@@ -142,15 +144,25 @@
   color: var(--bg);
   font-size: 18px;
   margin-bottom: 0;
+  font-weight: 600;
 }
 
 @media (max-width: 575px) {
   .block-color {
-    height: 250px;
+    height: 50vh;
   }
   .enterprise-detail {
-    padding-top: 25px;
+    padding-top: 32px;
     padding-bottom: 100px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .enterprise-row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .enterprise-detail .location-wrapper {
+    margin-bottom: 2rem;
   }
   .enterprise-detail figure img {
     border-radius: 8px;

@@ -1,7 +1,7 @@
 <header [class.scrolled]="scrolled" class="header fixed-top">
   <div class="container">
     <nav class="navbar">
-      <a class="navbar-brand" routerLink="/">
+      <a (click)="scrollToTop()" class="navbar-brand" routerLink="/">
         <img
           class="logo"
           [src]="getSafelogoPath()"
@@ -40,17 +40,21 @@
       <div class="row menu-links">
         <div class="col-sm-12">
           <ul>
-            <li><a routerLink="/">HOME</a></li>
+            <li><a (click)="scrollToTop()" routerLink="/">HOME</a></li>
             <li><a href="/#about">INSTITUCIONAL</a></li>
             <li>
-              <a routerLink="/empreendimentos">EMPREENDIMENTOS</a>
+              <a (click)="scrollToTop()" routerLink="/empreendimentos"
+                >EMPREENDIMENTOS</a
+              >
             </li>
             <li><a href="/#region">REGIÃO</a></li>
             <li>
-              <a routerLink="/oportunidades">OPORTUNIDADES</a>
+              <a (click)="scrollToTop()" routerLink="/oportunidades"
+                >OPORTUNIDADES</a
+              >
             </li>
             <li>
-              <a routerLink="/contato">CONTATO</a>
+              <a (click)="scrollToTop()" routerLink="/contato">CONTATO</a>
             </li>
           </ul>
         </div>

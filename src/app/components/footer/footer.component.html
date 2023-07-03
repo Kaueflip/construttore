@@ -15,10 +15,18 @@
           <h6>EMPREENDIMENTOS</h6>
           <ul>
             <li>
-              <a routerLink="/empreendimentos/brava-dreams">Brava Dreams</a>
+              <a
+                (click)="scrollToTop()"
+                routerLink="/empreendimentos/brava-dreams"
+                >Brava Dreams</a
+              >
             </li>
             <li>
-              <a routerLink="/empreendimentos/zaya-brava">Zaya Brava</a>
+              <a
+                (click)="scrollToTop()"
+                routerLink="/empreendimentos/zaya-brava"
+                >Zaya Brava</a
+              >
             </li>
             <li><a href="/#aboutMade">Marine Bay</a></li>
           </ul>
@@ -104,7 +112,7 @@
     </div>
     <div class="container container-2">
       <div class="row">
-        <a href="/">
+        <a (click)="scrollToTop()" routerLink="/">
           <img
             class="logo"
             [src]="getSafelogoPath()"

@@ -27,4 +27,7 @@ export class EnterprisesComponent {
       this.enterprises = enterprises;
     });
   }
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

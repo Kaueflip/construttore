@@ -15,4 +15,8 @@ export class FooterComponent {
   getSafelogoPath(): SafeResourceUrl {
     return this.sanitizer.bypassSecurityTrustResourceUrl(this.logoPath);
   }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

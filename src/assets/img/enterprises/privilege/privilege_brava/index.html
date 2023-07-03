@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title>404 Pagina não encontrada!</title>
+
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			user-select: none;
+			text-align: center;
+		}
+
+		body {
+			position: relative;
+			width: 100vw;
+			height: 100vh;
+			background: #009f6c;
+		}
+
+		.erro {
+			position: absolute;
+			transform: translate(-50%, -50%);
+			top: 25%;
+			left: 50%;
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 8rem;
+			color: #fff;
+		}
+
+		.texto {
+			position: absolute;
+			transform: translate(-50%, -50%);
+			top: 35%;
+			left: 50%;
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 2rem;
+			color: #fff;
+		}
+
+		.botao {
+			position: absolute;
+			transform: translate(-50%, -50%);
+			top: 50%;
+			left: 50%;
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 2rem;
+			color: #fff;
+			border: 0;
+			padding: 1rem;
+			background-color: #008753;
+		}
+
+		.botao:hover {
+			background-color: #6dc72a;
+		}
+
+		.logo {
+			position: absolute;
+			transform: translate(-50%, -50%);
+			top: 75%;
+			left: 50%;
+			border: none;
+			outline: none;
+		}
+
+		.logo svg path,
+		.logo svg polygon {
+			fill: #fff
+		}
+	</style>
+</head>
+
+<body>
+	<h1 class="erro">404</h1>
+
+	<p class="texto">(a página que você esta procurando não foi encontrada!)</p>
+
+	<button class="botao" onclick="goBack()">Voltar à navegação segura</button>
+
+	<div class="logo">
+		<?= file_get_contents("./source/img/svg/logo.svg"); ?>
+	</div>
+</body>
+
+<script>
+	function goBack() {
+		window.history.back();
+	}
+</script>
+
+</html>

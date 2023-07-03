@@ -36,4 +36,8 @@ export class HeaderComponent {
         document.documentElement.scrollTop ||
         document.body.scrollTop) >= 100;
   }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
